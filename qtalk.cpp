@@ -15,6 +15,6 @@ int main(int argc, char *argv[])
 
 	QLabel *label = new QLabel("何か凄い機能があると思ったの？ばかなの？しぬの？");
 	QProcess process;
-	process.start("saykana -s 70 なにかすごいきのうがあるとおもったの？。ばかなの？。しぬの？");
+	process.start("/usr/bin/env SayKana -s 70 なにかすごいきのうがあるとおもったの？。ばかなの？。しぬの？");
 	return app.exec();
 }
